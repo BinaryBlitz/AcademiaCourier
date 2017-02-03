@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#333">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:src="@drawable/big_logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="160dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="войти"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_marginTop="72dp"
+            android:background="#388E3C"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            app:met_iconLeft="@drawable/pass"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="Пароль"
+            app:met_iconPadding="2dp"
+            app:met_baseColor="#FFFFFF"
+            app:met_primaryColor="#FFFFFF"
+            app:met_textColorHint="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edittext2"
+            android:inputType="textPassword" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            app:met_iconPadding="2dp"
+            app:met_baseColor="#FFFFFF"
+            app:met_primaryColor="#FFFFFF"
+            app:met_textColorHint="#FFFFFF"
+            app:met_iconLeft="@drawable/user"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="Логин"
+            android:layout_gravity="center"
+            android:layout_marginBottom="76dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:id="@+id/edittext1"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Приложение для курьеров."
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="36dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

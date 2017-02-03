@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f1f1f1">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="#3b81a9"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:minHeight="?attr/actionBarSize">
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/action_bar"
+                android:background="#388E3C">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Заказ"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/date_text_view"
+                    android:gravity="center_vertical"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="60dp" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/imageView5"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/logout"
+                    android:padding="15dp" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/imageView6"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/back"
+                    android:padding="16dp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#388E3C">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/clock"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/info_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18:00"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="42dp"
+                            android:layout_marginRight="12dp" />
+                    </FrameLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_viewfdfd"
+                    android:layout_width="70dp"
+                    android:layout_height="36dp"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E64A19">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/info_text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000Р"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"></FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Клиент"
+                    android:id="@+id/textView3"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginRight="12dp"></FrameLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="fill_parent"
+                android:layout_height="114dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="44dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="56dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/imageView9"
+                                android:layout_gravity="left"
+                                android:src="@drawable/user_black"
+                                android:padding="10dp"
+                                android:layout_marginTop="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/address"
+                                android:layout_marginLeft="56dp"
+                                android:textColor="#212121"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="Ефанов Евгений" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Заказчик"
+                                android:id="@+id/textView44"
+                                android:layout_gravity="left|center_vertical"
+                                android:textColor="#727272"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="56dp"
+                                android:layout_marginTop="10dp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="#b6b6b6"
+                            android:layout_marginLeft="56dp"
+                            android:layout_marginRight="16dp"></FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/gender"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="56dp"
+                                android:textColor="#212121"
+                                android:gravity="center_vertical"
+                                android:textSize="14sp"
+                                android:text="+79030156131" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/imageView10"
+                                android:layout_gravity="left"
+                                android:src="@drawable/phone"
+                                android:scaleType="centerCrop"
+                                android:padding="10dp"
+                                android:layout_marginTop="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Телефон"
+                                android:id="@+id/textView44fdfd"
+                                android:layout_gravity="left|center_vertical"
+                                android:textColor="#727272"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="56dp"
+                                android:layout_marginTop="10dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="СВЯЗАТЬСЯ С КЛИЕНТОМ"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:background="#E64A19"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginRight="68dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"></FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Адрес"
+                    android:id="@+id/fdsdf"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginRight="12dp"></FrameLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2d"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="44dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="56dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:id="@+id/gender2"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="56dp"
+                                android:textColor="#212121"
+                                android:gravity="center_vertical"
+                                android:textSize="14sp"
+                                android:text="Одинцово дубки москва" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/imageView10d"
+                                android:layout_gravity="left"
+                                android:src="@drawable/marker"
+                                android:scaleType="centerCrop"
+                                android:padding="10dp"
+                                android:layout_marginTop="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Адрес доставки"
+                                android:id="@+id/textView44fdfdfdfd"
+                                android:layout_gravity="left|center_vertical"
+                                android:textColor="#727272"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="56dp"
+                                android:layout_marginTop="10dp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"></FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Состав заказа"
+                    android:id="@+id/fdsdfdsdsd"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:background="#727272"
+                    android:layout_marginRight="12dp"></FrameLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2d3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="74dp"
+                android:layout_marginRight="44dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/ingr"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab12"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:backgroundTint="#D32F2F"-->
+        <!--android:src="@drawable/cancel"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_gravity="right|bottom"/>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#388E3C"
+        android:src="@drawable/ok_ic"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="right|bottom"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#303F9F"
+        android:src="@drawable/finish"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="right|bottom"/>
+
+</android.support.design.widget.CoordinatorLayout>
