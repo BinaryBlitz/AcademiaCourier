@@ -18,9 +18,9 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.academiaexpresssystem.ProgressDialog;
-import com.academiaexpresssystem.QuickstartPreferences;
+import com.academiaexpresssystem.Push.QuickstartPreferences;
 import com.academiaexpresssystem.R;
-import com.academiaexpresssystem.RegistrationIntentService;
+import com.academiaexpresssystem.Push.RegistrationIntentService;
 import com.academiaexpresssystem.Server.DeliveryServerRequest;
 import com.academiaexpresssystem.Server.DeviceInfoStore;
 import com.academiaexpresssystem.Server.OnRequestPerformedListener;

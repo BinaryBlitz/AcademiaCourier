@@ -1,5 +1,6 @@
-package com.academiaexpresssystem;
+package com.academiaexpresssystem.Push;
 
+import com.academiaexpresssystem.R;
 import com.google.android.gms.gcm.GcmPubSub;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.google.android.gms.iid.InstanceID;
