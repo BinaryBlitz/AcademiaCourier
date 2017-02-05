@@ -48,18 +48,16 @@ object AndroidUtilities {
     fun checkPlayServices(context: Activity): Boolean {
         val apiAvailability = GoogleApiAvailability.getInstance()
         val resultCode = apiAvailability.isGooglePlayServicesAvailable(context)
-        if (resultCode != ConnectionResult.SUCCESS) {
-            return onSuccess(apiAvailability, context, resultCode)
+        if (resultCode == ConnectionResult.SUCCESS) {
+            return true
         }
-        return true
-    }
 
-    private fun onSuccess(apiAvailability: GoogleApiAvailability, context: Activity, resultCode: Int): Boolean {
         if (apiAvailability.isUserResolvableError(resultCode)) {
             apiAvailability.getErrorDialog(context, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show()
         } else {
             context.finish()
         }
+
         return false
     }
 
