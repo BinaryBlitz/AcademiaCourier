@@ -49,14 +49,18 @@ object AndroidUtilities {
         val apiAvailability = GoogleApiAvailability.getInstance()
         val resultCode = apiAvailability.isGooglePlayServicesAvailable(context)
         if (resultCode != ConnectionResult.SUCCESS) {
-            if (apiAvailability.isUserResolvableError(resultCode)) {
-                apiAvailability.getErrorDialog(context, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show()
-            } else {
-                context.finish()
-            }
-            return false
+            return onSuccess(apiAvailability, context, resultCode)
         }
         return true
+    }
+
+    private fun onSuccess(apiAvailability: GoogleApiAvailability, context: Activity, resultCode: Int): Boolean {
+        if (apiAvailability.isUserResolvableError(resultCode)) {
+            apiAvailability.getErrorDialog(context, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show()
+        } else {
+            context.finish()
+        }
+        return false
     }
 
     fun convertDpToPixel(dp: Float, context: Context): Float {
