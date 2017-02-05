@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package com.academiaexpresssystem;
+package com.academiaexpresssystem.Push;
 
+import com.academiaexpresssystem.R;
 import com.google.android.gms.gcm.GcmListenerService;
 
 import android.app.NotificationManager;
