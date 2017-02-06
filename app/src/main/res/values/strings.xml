@@ -8,4 +8,7 @@
     <string name="password">Пароль</string>
     <string name="login">Логин</string>
     <string name="auth_help_text">Приложение для курьеров.</string>
+    <string name="new_code">НОВЫЕ</string>
+    <string name="assigned_code">ПРИНЯТЫЕ</string>
+    <string name="no_description">Нет описания</string>
 </resources>
