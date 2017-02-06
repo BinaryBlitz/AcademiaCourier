@@ -15,7 +15,9 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Fabric.with(this, Crashlytics())
         setContentView(R.layout.splash_layout)
-        openActivity(if (DeviceInfoStore.getToken(this) == "null") AuthActivity::class.java else OrdersActivity::class.java)
+
+        val activity = if (DeviceInfoStore.getToken(this) == "null") AuthActivity::class.java else OrdersActivity::class.java
+        openActivity(activity)
     }
 
     private fun openActivity(activity: Class<*>) {
