@@ -22,7 +22,7 @@ public interface ApiEndpoints {
     Call<JsonObject> updateOrder(@Path("id") int id, @Query("api_token") String token);
 
     @PATCH("courier")
-    Call<JsonObject> updateUser(@Query("api_token") String token);
+    Call<JsonObject> updateUser(@Body JsonObject user, @Query("api_token") String token);
 
     @GET("orders")
     Call<JsonArray> getOrders(@Query("api_token") String token);
