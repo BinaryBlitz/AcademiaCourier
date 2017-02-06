@@ -1,4 +1,4 @@
-package com.academiaexpress.Server;
+package com.academiaexpresssystem.Server;
 
 import android.content.Context;
 

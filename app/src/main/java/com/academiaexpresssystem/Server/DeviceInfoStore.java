@@ -24,10 +24,10 @@ public class DeviceInfoStore {
         return prefs.getString(ServerConfig.INSTANCE.getTokenEntity(), "null");
     }
 
-    public static void saveId(Context context, String token) {
+    public static void saveId(Context context, String id) {
         SharedPreferences prefs = context.getSharedPreferences(
                 ServerConfig.INSTANCE.getPrefsName(), Context.MODE_PRIVATE);
-        prefs.edit().putString(ServerConfig.INSTANCE.getUserIdEntity(), token).apply();
+        prefs.edit().putString(ServerConfig.INSTANCE.getUserIdEntity(), id).apply();
     }
 
     public static void resetId(Context context) {
