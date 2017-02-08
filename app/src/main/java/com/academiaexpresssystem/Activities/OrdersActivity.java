@@ -242,7 +242,7 @@ public class OrdersActivity extends AppCompatActivity {
                 AndroidUtilities.INSTANCE.getStringFieldFromJson(object.get("status")).equals("new"),
                 AndroidUtilities.INSTANCE.getStringFieldFromJson(object.get("latitude")) + "=" +
                         AndroidUtilities.INSTANCE.getStringFieldFromJson(object.get("longitude")),
-                AndroidUtilities.INSTANCE.getStringFieldFromJson(object.get("id")),
+                AndroidUtilities.INSTANCE.getIntFieldFromJson(object.get("id")),
                 AndroidUtilities.INSTANCE.getIntFieldFromJson(object.get("total_price")),
                 getDateObjectFromJson(AndroidUtilities.INSTANCE.getStringFieldFromJson(object.get("scheduled_for")))
         );
