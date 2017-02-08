@@ -1,7 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.academiaexpresssystem">
-
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -67,10 +65,7 @@
                 <category android:name="com.academiaexpresssystem" />
             </intent-filter>
         </receiver>
-        <!-- [END gcm_receiver] -->
 
-
-        <!-- [START gcm_listener] -->
         <service
                 android:name=".Push.MyGcmListenerService"
                 android:exported="false" >
@@ -78,8 +73,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </service>
-        <!-- [END gcm_listener] -->
-        <!-- [START instanceId_listener] -->
+
         <service
                 android:name=".Push.MyInstanceIDListenerService"
                 android:exported="false">
@@ -87,7 +81,6 @@
                 <action android:name="com.google.android.gms.iid.InstanceID"/>
             </intent-filter>
         </service>
-        <!-- [END instanceId_listener] -->
         <service
                 android:name=".Push.RegistrationIntentService"
                 android:exported="false">

@@ -30,7 +30,7 @@ class OrderActivity : AppCompatActivity() {
 
         initElements()
         setOnClickListeners()
-        initOrderList()git 
+        initOrderList()
     }
 
     private fun initOrderList() {
