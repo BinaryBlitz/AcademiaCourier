@@ -11,4 +11,10 @@
     <string name="new_code">НОВЫЕ</string>
     <string name="assigned_code">ПРИНЯТЫЕ</string>
     <string name="no_description">Нет описания</string>
+    <string name="dialog_title">AE Курьер</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ruble_sign">" ₽"</string>
+    <string name="x">X</string>
 </resources>
