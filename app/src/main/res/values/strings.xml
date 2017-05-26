@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">AE Курьер</string>
+    <string name="password_error">Поле пароля не заполнено.</string>
+    <string name="name_error">Поле имени не заполнено.</string>
+    <string name="auth_error">Ошибка авторизации.</string>
+    <string name="internet_connection_error">Потеряно интернет соединение</string>
+    <string name="auth">войти</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+    <string name="auth_help_text">Приложение для курьеров.</string>
+    <string name="new_code">НОВЫЕ</string>
+    <string name="assigned_code">ПРИНЯТЫЕ</string>
+    <string name="no_description">Нет описания</string>
+    <string name="dialog_title">AE Курьер</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ruble_sign">" ₽"</string>
+    <string name="x">X</string>
 </resources>

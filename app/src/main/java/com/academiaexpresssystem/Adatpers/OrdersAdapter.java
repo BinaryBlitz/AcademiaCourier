@@ -65,7 +65,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, OrderActivity.class);
-                OrderActivity.order = order;
+                OrderActivity.Companion.setOrder(order);
                 context.startActivity(intent);
             }
         });

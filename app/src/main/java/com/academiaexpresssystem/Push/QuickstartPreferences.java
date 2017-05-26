@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.academiaexpresssystem;
+package com.academiaexpresssystem.Push;
 
 public class QuickstartPreferences {
 
